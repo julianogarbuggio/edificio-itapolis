@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edifício Itápolis — Guia do Morador e do Proprietário</title>
+<meta name="description" content="Página oficial de informações do Condomínio Edifício Itápolis: regimento interno, telefones e emergências, lixo, mudanças, entregas, direitos e deveres, cadastro de moradores e proprietários.">
+<meta property="og:title" content="Edifício Itápolis — Guia do Morador e do Proprietário">
+<meta property="og:description" content="Regimento, telefones de emergência, coleta de lixo, mudanças, entregas, direitos e deveres e cadastro de moradores e proprietários.">
+<meta property="og:image" content="https://julianogarbuggio.github.io/edificio-itapolis/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#1F6B45;--verde2:#2A7F55;--verde-esc:#0F3D28;--verde-claro:#E6F3EA;--creme:#F7F5F0;--vermelho:#B42318;--verm-claro:#FDECEA;--ambar:#B7791F;--ambar-claro:#FFF4DD;--ok:#1E6B3F;--ok-claro:#E6F4EA;--cinza:#4A4A4A;--borda:#D8DEE2;--ink:#22303A;--bg:#EEF2F0}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5;font-size:17px}
+.wrap{max-width:760px;margin:0 auto;padding:12px 12px 40px}
+.sec{background:#fff;border-radius:18px;padding:22px 20px;margin:14px 0;box-shadow:0 2px 10px rgba(0,0,0,.06);scroll-margin-top:12px}
+h1{font-size:1.9rem;line-height:1.1;margin:0 0 10px;color:var(--verde)}
+h2{font-size:1.35rem;line-height:1.2;margin:0 0 10px;color:var(--verde)}
+h3{font-size:1.05rem;margin:16px 0 6px;color:var(--verde2)}
+p{margin:0 0 10px}ul{margin:0 0 10px;padding-left:22px}li{margin-bottom:6px}
+a{color:var(--verde)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:#fff;background:var(--verde2);padding:4px 10px;border-radius:8px;margin-bottom:10px}
+.tag.red{background:var(--vermelho)}.tag.amber{background:var(--ambar)}.tag.green{background:var(--ok)}
+.box{border-radius:12px;padding:12px 14px;margin:0 0 12px}
+.box.red{background:var(--verm-claro);border-left:6px solid var(--vermelho)}.box.amber{background:var(--ambar-claro);border-left:6px solid var(--ambar)}.box.blue{background:var(--verde-claro);border-left:6px solid var(--verde2)}.box.green{background:var(--ok-claro);border-left:6px solid var(--ok)}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+.contact{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--borda);border-radius:12px;padding:10px 12px;margin-bottom:8px;text-decoration:none;color:inherit}
+.contact .ic{width:40px;height:40px;border-radius:50%;background:var(--verde);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;flex:none}
+.contact.red .ic{background:var(--vermelho)}
+.contact .lbl{font-size:.72rem;color:#6b7a80;text-transform:uppercase;letter-spacing:.4px}.contact .val{font-size:1.25rem;font-weight:800;color:var(--verde);line-height:1.1;word-break:break-word}.contact.red .val{color:var(--vermelho)}.contact .val.small{font-size:1rem}.contact .sub{font-size:.8rem;color:var(--cinza);margin-top:2px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:520px){.grid2{grid-template-columns:1fr}}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}@media(max-width:520px){.grid3{grid-template-columns:1fr 1fr}}
+.num{background:var(--verm-claro);border:1px solid #f3c1bb;border-radius:12px;padding:10px;text-align:center;text-decoration:none;color:var(--vermelho)}
+.num b{display:block;font-size:1.7rem;line-height:1}.num span{font-size:.75rem;color:var(--cinza)}
+.sig{display:flex;align-items:flex-start;gap:8px;background:var(--creme);border-radius:10px;padding:10px;font-size:.92rem}.sig .e{font-size:1.3rem;line-height:1;flex:none}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0 0 12px}.steps li{counter-increment:s;position:relative;padding-left:46px;margin-bottom:10px;min-height:34px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--verde);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}.steps.red li::before{background:var(--vermelho)}
+.small{font-size:.88rem;color:var(--cinza)}
+table{width:100%;border-collapse:collapse;font-size:.95rem;margin:0 0 12px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--borda)}th{background:var(--verde-claro);color:var(--verde-esc);font-size:.78rem;text-transform:uppercase;letter-spacing:.4px}
+.cover{background:linear-gradient(170deg,#0F3D28 0%,#1F6B45 55%,#2A7F55 100%);color:#fff;text-align:center;padding:28px 20px}
+.cover .inner{display:flex;flex-direction:column;gap:10px}.cover .logo{width:min(280px,80%);margin:0 auto 8px;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.3);background:#fff}
+.cover .kicker{font-size:.8rem;letter-spacing:2px;text-transform:uppercase;opacity:.85}.cover h1{color:#fff;font-size:2.1rem;margin:4px 0}.cover .sub{font-size:1.02rem;opacity:.95}
+.cover .alert{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);border-radius:14px;padding:12px 16px;margin-top:6px;font-size:.95rem}
+.cover .who{font-size:.8rem;opacity:.8;margin-top:8px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:10px 0 4px}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:13px 18px;font-weight:700;text-decoration:none;font-size:1rem;text-align:center}
+.btn.w{background:#fff;color:var(--verde)}.btn.wa{background:#25D366;color:#073b1a}.btn.g{background:var(--verde);color:#fff}.btn.ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4)}.btn.line{background:#fff;color:var(--verde);border:2px solid var(--verde)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips a{background:var(--verde-claro);color:var(--verde-esc);text-decoration:none;font-weight:700;font-size:.85rem;padding:8px 12px;border-radius:999px}.chips a.r{background:var(--verm-claro);color:var(--vermelho)}
+details{background:var(--creme);border-radius:12px;padding:0;margin-bottom:8px}summary{cursor:pointer;font-weight:700;padding:12px 14px;color:var(--verde-esc);list-style:none}summary::-webkit-details-marker{display:none}summary::after{content:"＋";float:right;color:var(--verde)}details[open] summary::after{content:"－"}details .in{padding:0 14px 12px}
+.qrbox{display:flex;gap:14px;align-items:center;background:var(--verde-claro);border-radius:14px;padding:12px;margin:8px 0 12px}.qrbox img{width:120px;height:120px;background:#fff;padding:6px;border-radius:8px;flex:none;image-rendering:pixelated}.qrbox p{margin:0;font-size:.92rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:560px){.two{grid-template-columns:1fr}}
+.card{border:2px solid var(--verde);border-radius:14px;padding:14px;background:#fff}.card h3{margin-top:0}
+.faz{border-left:6px solid var(--ok);background:var(--ok-claro);border-radius:12px;padding:10px 14px;margin-bottom:10px}.naofaz{border-left:6px solid var(--vermelho);background:var(--verm-claro);border-radius:12px;padding:10px 14px;margin-bottom:10px}.faz ul,.naofaz ul{margin:4px 0 0}
+.final{background:linear-gradient(170deg,#0F3D28,#1F6B45);color:#fff}.final h2,.final h3{color:#fff}.final .contact{background:rgba(255,255,255,.96)}.final .small{color:rgba(255,255,255,.85)}
+.sticky{position:sticky;bottom:0;background:var(--verde-esc);color:#fff;padding:10px 12px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;border-radius:14px 14px 0 0;margin-top:20px;z-index:5}
+.sticky a{color:#fff;font-weight:700;text-decoration:none;font-size:.92rem}
+footer{text-align:center;margin:20px 0 10px;color:#6b7a80;font-size:.8rem}
+.tl{border-left:4px solid var(--verde2);padding-left:14px;margin:8px 0 12px}.tl p{margin-bottom:8px}.tl b{color:var(--verde)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- CAPA -->
+<section class="sec cover">
+  <div class="inner">
+    <img class="logo" src="img/logo.jpg" alt="Juliano Garbuggio — Síndico Ed. Itápolis">
+    <div class="kicker">Condomínio Edifício Itápolis</div>
+    <h1>GUIA DO MORADOR<br>E DO PROPRIETÁRIO</h1>
+    <div class="sub">Regimento, telefones úteis, emergências, lixo, mudanças, entregas, direitos e deveres — tudo em um só lugar.</div>
+    <div class="alert">Guarde esta página na tela inicial do celular. Em emergência, vá direto à seção vermelha.</div>
+    <div class="actions">
+      <a class="btn w" href="#cadastro">📋 Atualizar cadastro</a>
+      <a class="btn w" href="Regimento_Interno_Edificio_Itapolis.pdf" target="_blank" rel="noopener">📘 Regimento Interno</a>
+      <a class="btn wa" href="https://wa.me/5511956759223?text=Ol%C3%A1%2C%20s%C3%ADndico.%20Sou%20morador%2Fpropriet%C3%A1rio%20do%20Ed.%20It%C3%A1polis." target="_blank" rel="noopener">💬 Falar com o síndico</a>
+    </div>
+    <div class="who">Rua Pamplona, 1461 — Jardim Paulista — São Paulo/SP<br>Síndico: Juliano Garbuggio · Administradora: PropStarter</div>
+  </div>
+</section>
+
+<!-- ATALHOS -->
+<section class="sec">
+  <h2>Ir direto ao assunto</h2>
+  <div class="chips">
+    <a class="r" href="#emergencia">🚨 Emergências</a>
+    <a href="#seguranca">🛡️ Portaria e Torre</a>
+    <a href="#ramais">☎️ Ramais</a>
+    <a href="#cadastro">📋 Cadastro</a>
+    <a href="#lixo">🗑️ Lixo</a>
+    <a href="#mudanca">🚚 Mudanças e obras</a>
+    <a href="#entregas">📦 Entregas</a>
+    <a href="#direitos">⚖️ Direitos</a>
+    <a href="#deveres">📌 Deveres</a>
+    <a href="#funcoes">👥 Quem faz o quê</a>
+    <a href="#historia">🏛️ História</a>
+    <a href="#regimento">📘 Regimento</a>
+    <a href="#contato">✉️ Dúvidas e sugestões</a>
+  </div>
+</section>
+
+<!-- EMERGÊNCIAS -->
+<section class="sec" id="emergencia">
+  <span class="tag red">Emergência</span>
+  <h2>Telefones de emergência</h2>
+  <div class="grid3" style="margin-bottom:12px">
+    <a class="num" href="tel:190"><b>190</b><span>Polícia Militar</span></a>
+    <a class="num" href="tel:192"><b>192</b><span>SAMU</span></a>
+    <a class="num" href="tel:193"><b>193</b><span>Bombeiros</span></a>
+    <a class="num" href="tel:197"><b>197</b><span>Polícia Civil</span></a>
+    <a class="num" href="tel:199"><b>199</b><span>Defesa Civil</span></a>
+    <a class="num" href="tel:195"><b>195</b><span>Sabesp</span></a>
+  </div>
+
+  <h3>🛗 Elevador — Orona</h3>
+  <a class="contact red" href="tel:40072088"><div class="ic">📞</div><div><div class="lbl">Orona — atendimento 24h</div><div class="val">4007-2088</div><div class="sub">Também: 0800 607 2088</div></div></a>
+  <div class="box red">
+    <p><b>Alguém preso na cabine?</b></p>
+    <ul>
+      <li>Use o <b>interfone / botão de emergência</b> da cabine.</li>
+      <li>Avise a <b>portaria virtual (ramal 94)</b> e o síndico.</li>
+      <li>Risco imediato ou necessidade de resgate: ligue <b>193 (Bombeiros)</b>.</li>
+      <li><b>Nunca</b> force portas nem tente acessar poço ou casa de máquinas.</li>
+    </ul>
+  </div>
+  <p class="small">Para abrir chamado técnico, tenha em mãos o endereço (Rua Pamplona, 1461), o elevador (social ou de serviço) e um telefone de contato no local.</p>
+
+  <h3>⚡ Energia e gás</h3>
+  <a class="contact red" href="tel:08007272196"><div class="ic">💡</div><div><div class="lbl">Enel — falta de luz</div><div class="val">0800 72 72 196</div></div></a>
+  <a class="contact red" href="tel:08000110197"><div class="ic">🔥</div><div><div class="lbl">Comgás — vazamento de gás</div><div class="val">0800 0110 197</div><div class="sub">WhatsApp: (11) 3325-0197</div></div></a>
+
+  <div class="box amber">
+    <p><b>Vazamento no seu apartamento?</b> Feche imediatamente os registros (todos os banheiros e dois na lavanderia) e chame um encanador de sua confiança. Queda de energia só na sua unidade? Confira primeiro o disjuntor, na caixa de energia da entrada do apartamento. <b>Jamais mexa</b> em registros ou medidores externos do prédio.</p>
+  </div>
+  <p class="small">O síndico não é porteiro, eletricista, encanador ou chaveiro: problemas <i>dentro</i> da unidade são do morador. O condomínio não indica prestadores — mantenha à mão os contatos de um encanador, eletricista, chaveiro e vidraceiro de confiança, de preferência 24h.</p>
+</section>
+
+<!-- SEGURANÇA -->
+<section class="sec" id="seguranca">
+  <span class="tag">Segurança</span>
+  <h2>Portaria virtual Agaplan e Torre de Vigilância</h2>
+  <p>A portaria é <b>remota e opera 24 horas</b>, com a Central de Monitoramento da Agaplan. Ela controla o acesso, o cadastro de moradores, proprietários e visitantes e monitora as câmeras.</p>
+  <a class="contact" href="https://wa.me/5511943124454" target="_blank" rel="noopener"><div class="ic">🛡️</div><div><div class="lbl">Portaria — WhatsApp</div><div class="val">(11) 94312-4454</div><div class="sub">Segunda a sábado, 7h às 19h · fora do horário, fale com a portaria virtual pelo ramal 94</div></div></a>
+
+  <h3>🗼 Torre de Segurança Colaborativa</h3>
+  <p>Instalada em junho de 2026 em frente ao prédio: monitoramento em alta definição, gravação em nuvem, apoio de inteligência artificial e integração com a central 24h. <b>Viu alguma atividade estranha nos arredores?</b> Aponte a câmera para o QR Code abaixo (ou o que está fixado na própria torre) e acione a Agaplan.</p>
+  <div class="qrbox">
+    <img src="img/qr_torre.png" alt="QR Code da Agaplan">
+    <p><b>QR Code — Torre de Vigilância Agaplan</b><br>Contato em caso de atividade suspeita.<br><span class="small">Em perigo imediato, ligue antes para o <b>190</b>.</span></p>
+  </div>
+
+  <h3>Boas práticas</h3>
+  <ul>
+    <li>Ao entrar ou sair, seja breve; evite ficar parado na calçada com o portão aberto.</li>
+    <li>Na garagem, <b>aguarde o fechamento total do portão</b> antes de seguir para a vaga.</li>
+    <li><b>Não deixe chaves, controles ou objetos</b> na portaria para terceiros retirarem.</li>
+    <li>Visitantes e prestadores se identificam pelo interfone; <b>autorização por telefone na hora da chegada não é aceita</b> — autorize antes, pelo sistema/aplicativo.</li>
+  </ul>
+</section>
+
+<!-- RAMAIS -->
+<section class="sec" id="ramais">
+  <span class="tag">Interfones</span>
+  <h2>Ramais internos</h2>
+  <table>
+    <tr><th>Local</th><th>Ramal</th></tr>
+    <tr><td>🏢 Portaria do prédio</td><td><b>95</b></td></tr>
+    <tr><td>🛡️ Portaria virtual Agaplan</td><td><b>94</b></td></tr>
+    <tr><td>🛗 Elevador social</td><td><b>17</b></td></tr>
+    <tr><td>🛗 Elevador de serviço</td><td><b>16</b></td></tr>
+    <tr><td>🚗 Garagem</td><td><b>18</b></td></tr>
+    <tr><td>🧰 Casa do zelador</td><td><b>15</b></td></tr>
+  </table>
+</section>
+
+<!-- CADASTRO -->
+<section class="sec" id="cadastro">
+  <span class="tag green">Obrigatório</span>
+  <h2>Cadastro de moradores e proprietários</h2>
+  <p>O Regimento (Art. 3º, VI) exige que <b>todos os proprietários e moradores mantenham o cadastro atualizado</b> — mesmo quem já se cadastrou na Agaplan ou na PropStarter. O formulário abaixo é o cadastro do próprio condomínio: reforça a segurança, mantém os dados em dia e agiliza o atendimento. Os dados são tratados conforme a LGPD (Art. 27).</p>
+  <div class="two">
+    <div class="card">
+      <h3>🏠 Sou MORADOR(A)</h3>
+      <p class="small">Inquilino ou ocupante. No formulário, escolha <b>“MORADOR(A)”</b> (ou “PROPRIETÁRIO(A)-MORADOR(A)” se a unidade é sua).</p>
+      <a class="btn g" style="width:100%;justify-content:center" href="https://julianogarbuggio.github.io/formulario-itapolis/" target="_blank" rel="noopener">Cadastrar morador →</a>
+    </div>
+    <div class="card">
+      <h3>🔑 Sou PROPRIETÁRIO(A)</h3>
+      <p class="small">Dono da unidade, more nela ou não. No formulário, escolha <b>“PROPRIETÁRIO(A)”</b>. Se alugar, informe o locatário.</p>
+      <a class="btn g" style="width:100%;justify-content:center" href="https://julianogarbuggio.github.io/formulario-itapolis/" target="_blank" rel="noopener">Cadastrar proprietário →</a>
+    </div>
+  </div>
+  <div class="box blue" style="margin-top:12px">
+    <p><b>Como funciona:</b> 1) abra o formulário; 2) escolha sua relação com o condomínio; 3) preencha os campos obrigatórios; 4) escolha o motivo do contato; 5) toque em <b>“Enviar via WhatsApp Business”</b> — a mensagem chega direto ao síndico.</p>
+    <p>O mesmo formulário serve para <b>elogios, sugestões, dúvidas, denúncias e pedidos de autorização de reforma</b> (com ART/RRT e memorial descritivo).</p>
+  </div>
+  <p class="small"><b>Proprietários que alugam:</b> informem previamente ao síndico a locação; o locatário deve se cadastrar como morador, e as TAGs e controles são entregues pelo proprietário ao locatário, às custas deste (Art. 18).</p>
+</section>
+
+<!-- LIXO -->
+<section class="sec" id="lixo">
+  <span class="tag">Rotina do prédio</span>
+  <h2>Lixo: horário, local e sacos</h2>
+  <div class="box green">
+    <p><b>🕝 Horário: segunda a sábado, das 14h30 às 15h00.</b></p>
+    <p><b>📍 Local:</b> sob a <b>janela do corredor de cada andar</b>, ao lado do elevador. <b>Não deixe lixo na porta do apartamento</b> — o corredor é rota de fuga e precisa ficar desimpedido.</p>
+  </div>
+  <div class="grid2">
+    <div class="sig"><span class="e">⚫</span><div><b>Lixo comum</b><br>Sacos <b>pretos ou cinza</b>: restos de comida, papel higiênico, fraldas, bitucas, embalagens engorduradas.</div></div>
+    <div class="sig"><span class="e">🟢</span><div><b>Reciclável</b><br>Sacos <b>verdes</b> — ou caixas de papelão e sacolas de outras cores que não preto/cinza: plástico, papel, metal e vidro, limpos e secos.</div></div>
+  </div>
+  <h3>Cuidados</h3>
+  <ul>
+    <li>Sacos <b>bem vedados</b>, sem vazar.</li>
+    <li><b>Vidro, espelho e cacos:</b> em saco reforçado, identificado como “lixo cortante”.</li>
+    <li><b>Pilhas, tintas, solventes, inseticidas e combustíveis</b> não vão para a lixeira comum.</li>
+    <li><b>Entulho, móveis velhos, eletrodomésticos e restos de poda</b> são responsabilidade do morador: leve a um <a href="https://capital.sp.gov.br/w/noticia/encontre-o-ecoponto-mais-perto-de-sua-casa" target="_blank" rel="noopener">Ecoponto</a>.</li>
+    <li>Precisa descartar fora do horário? Fale com a administração/funcionários ou, se tiver acesso à garagem, use as lixeiras de lá, sempre pelo elevador de carga.</li>
+    <li><b>Jamais jogue objetos ou lixo pela janela.</b> Já houve acidente com vidro e uma criança saiu ferida.</li>
+  </ul>
+</section>
+
+<!-- MUDANÇA E OBRAS -->
+<section class="sec" id="mudanca">
+  <span class="tag amber">Agendamento</span>
+  <h2>Mudanças, obras e horários</h2>
+  <table>
+    <tr><th>Atividade</th><th>Regra</th></tr>
+    <tr><td>🚚 Mudança</td><td>Agendar com <b>7 dias úteis</b> de antecedência com o síndico e a portaria. Segunda a sexta, 9h–17h; sábados, 9h–14h.</td></tr>
+    <tr><td>🔨 Obras ruidosas</td><td>Segunda a sexta, 9h–17h; sábados, 9h–14h. <b>Proibido aos domingos e feriados.</b></td></tr>
+    <tr><td>🌙 Silêncio</td><td><b>22h às 8h.</b></td></tr>
+    <tr><td>🏗️ Material de obra</td><td>Seg a sáb, 8h–19h, pelo subsolo, com pré-agendamento. Material bruto só ensacado; nada armazenado na garagem.</td></tr>
+  </table>
+  <div class="box amber">
+    <p><b>Reforma na unidade (Art. 21):</b> comunique antes o síndico e só comece após a <b>autorização formal</b>, com memorial descritivo, projeto e <b>ART/RRT</b> do responsável técnico (NBR 16.280). Obras que mexam em estrutura, fachada ou instalações comuns exigem análise técnica favorável. Caçambas só com autorização, junto ao meio-fio, por até 72h.</p>
+  </div>
+  <p class="small">O elevador de cargas só pode ser usado para o que couber, com a cabine protegida. Entulho e material de obra descem pelo elevador de serviço, em recipientes adequados.</p>
+</section>
+
+<!-- ENTREGAS -->
+<section class="sec" id="entregas">
+  <span class="tag amber">Atenção — regra atual</span>
+  <h2>Encomendas, correspondências e entregas</h2>
+  <div class="box amber">
+    <p><b>Quem recebe: exclusivamente o Kleber</b> (comunicado de 24/11/2026, alinhado com a PropStarter).</p>
+    <ul>
+      <li><b>Segunda a sexta:</b> 8h às 17h</li>
+      <li><b>Sábados:</b> 8h às 12h</li>
+    </ul>
+  </div>
+  <ul>
+    <li>No almoço do Kleber, aos domingos, feriados, folgas ou na ausência dele, a entrega é recebida <b>pelo próprio morador</b>, acionado pela portaria virtual.</li>
+    <li>O <b>Gilson não está autorizado a receber encomendas</b>, nem excepcionalmente. O síndico também não recebe.</li>
+    <li>Alimentos e medicamentos podem ser entregues 24h, com controle da Central de Monitoramento.</li>
+    <li>Toda entrega é retirada <b>pelo próprio morador</b>, com assinatura em livro. Entregadores não circulam desacompanhados.</li>
+    <li>Proprietários que alugam: <b>avisem seus inquilinos</b> desta regra.</li>
+    <li><b>Não deixe chaves, controles ou objetos</b> na portaria para terceiros. Chaves só saem para o proprietário ou para quem tenha procuração com firma reconhecida.</li>
+  </ul>
+</section>
+
+<!-- DIREITOS -->
+<section class="sec" id="direitos">
+  <span class="tag green">Regimento — Art. 2º</span>
+  <h2>Direitos dos condôminos</h2>
+  <details open><summary>Uso da unidade e das áreas comuns</summary><div class="in"><ul>
+    <li>Usar, gozar e dispor da sua unidade, conforme a destinação residencial, sem prejudicar a segurança e a solidez do prédio nem perturbar os vizinhos.</li>
+    <li>Usar as partes comuns, desde que não impeça o uso igual pelos demais.</li>
+    <li>Usar o serviço de portaria, sem desviar funcionários para serviços da sua unidade.</li></ul></div></details>
+  <details><summary>Voz e participação</summary><div class="in"><ul>
+    <li>Fazer <b>sugestões, queixas e reclamações por escrito</b> (e-mail, WhatsApp do síndico ou formulário), com resposta em até <b>48 horas úteis</b>.</li>
+    <li>Convocar e participar das <b>assembleias</b> — direito de quem está em dia com o condomínio, exercido pelo proprietário ou por procurador (instrumento público ou firma reconhecida).</li>
+    <li><b>Examinar a qualquer tempo</b> livros e arquivos da administração e receber a <b>prestação de contas mensal</b> em formato digital (resposta em até 10 dias).</li>
+    <li><b>Denunciar</b> irregularidades à administração.</li></ul></div></details>
+  <details><summary>Atendimento</summary><div class="in"><ul>
+    <li>Segunda a sexta, 8h–18h; sábados, 8h–12h. Fora disso, só emergências.</li>
+    <li>E-mail para assuntos não urgentes; WhatsApp do síndico para emergências reais.</li></ul></div></details>
+  <details><summary>Imagens das câmeras</summary><div class="in"><p>Pedido formal por e-mail ao síndico, com data, horário, local e motivo. Existindo registro, as imagens são disponibilizadas em até 72 horas. O sistema é eletrônico e pode falhar; não substitui vigilância.</p></div></details>
+</section>
+
+<!-- DEVERES -->
+<section class="sec" id="deveres">
+  <span class="tag red">Regimento — Arts. 3º e 4º</span>
+  <h2>Deveres dos condôminos</h2>
+  <details open><summary>Convivência</summary><div class="in"><ul>
+    <li>Cumprir o Regimento, a Convenção e a lei (Código Civil, arts. 1.332 a 1.358); acatar as deliberações da Assembleia e do síndico.</li>
+    <li>Agir com urbanidade e <b>tratar os funcionários com respeito e polidez</b>.</li>
+    <li><b>Silêncio das 22h às 8h</b>; volume moderado de som e TV; em festas, zelar pelos convidados.</li>
+    <li>Manter portas da unidade, do condomínio e da garagem sempre fechadas.</li></ul></div></details>
+  <details><summary>Dinheiro e cadastro</summary><div class="in"><ul>
+    <li>Participar do rateio de <b>todas</b> as despesas, inclusive reformas de áreas comuns que não use diretamente (como a garagem).</li>
+    <li><b>Manter atualizados</b> os dados de moradores, inquilinos, empregados e veículos.</li>
+    <li>Incluir o Regimento nos <b>contratos de locação</b>.</li></ul></div></details>
+  <details><summary>Manutenção e responsabilidade</summary><div class="in"><ul>
+    <li>Reparar <b>em até 72 horas</b> vazamentos ou infiltrações que afetem outras unidades ou o condomínio.</li>
+    <li>Responder por danos originados na sua unidade e pelos atos de inquilinos, visitantes e prestadores.</li>
+    <li>Permitir acesso à unidade, quando indispensável, para inspeções, reparos ou emergências, mediante comunicação prévia.</li>
+    <li>Agendar mudanças e obras e obter autorização de reforma (veja “Mudanças”).</li></ul></div></details>
+  <details><summary>O que é proibido (resumo)</summary><div class="in"><ul>
+    <li>Estender roupas ou tapetes nas janelas; sacudir pó pelas janelas; <b>lançar objetos ou líquidos</b> para fora.</li>
+    <li>Deixar objetos, plantas ou vasos nos <b>corredores e halls</b> (rotas de fuga — Instrução Técnica 11/2022 do Corpo de Bombeiros).</li>
+    <li>Alterar fachada, cor de janelas e portas, ou fixar placas e cartazes sem autorização.</li>
+    <li>Usar funcionários para serviços particulares; acessar casas de máquinas e áreas técnicas.</li>
+    <li><b>Fumar</b> (inclusive cigarro eletrônico) nas áreas comuns e elevadores.</li>
+    <li>Unidade como república, pensão ou <b>locação de curta temporada (até 90 dias)</b>, e uso comercial com atendimento ao público.</li>
+    <li>Garagem: velocidade máxima de <b>15 km/h</b>; sem consertos, lavagens, brincadeiras, bicicletas ou objetos nas vagas; vagas só entre condôminos.</li>
+    <li>Animais: permitidos se dóceis, <b>sempre de coleira/guia curta</b>, preferencialmente pelo elevador de serviço; fora do hall social e das áreas comuns.</li></ul></div></details>
+  <div class="box amber" style="margin-top:10px">
+    <p><b>Penalidades (Art. 28):</b> advertência escrita; multa de 1 cota na primeira reincidência; 2 cotas na segunda; até 5 cotas nas seguintes; até 10 cotas em conduta antissocial. Há direito de defesa antes da multa definitiva.</p>
+  </div>
+</section>
+
+<!-- FUNÇÕES -->
+<section class="sec" id="funcoes">
+  <span class="tag">Quem faz o quê</span>
+  <h2>Funções: síndico, zelador, porteiro e portaria virtual</h2>
+
+  <h3>🧑‍💼 Síndico — Juliano Garbuggio</h3>
+  <div class="faz"><b>O que faz</b><ul>
+    <li>Administra o condomínio e zela pelas áreas comuns.</li>
+    <li>Contrata e acompanha prestadores e contratos.</li>
+    <li>Presta contas e confere as finanças (executadas pela PropStarter).</li>
+    <li>Comunica decisões, convoca assembleias e analisa pedidos fora da rotina dos funcionários.</li>
+    <li>Autoriza (ou não) reformas, mudanças e acessos especiais.</li></ul></div>
+  <div class="naofaz"><b>O que NÃO faz</b><ul>
+    <li>Não é porteiro, eletricista, encanador nem chaveiro.</li>
+    <li>Não se envolve em assuntos privados das unidades.</li>
+    <li>Não guarda chaves de unidades e <b>não recebe encomendas</b>.</li>
+    <li>Não resolve problemas dentro do seu apartamento (vazamento, curto, fechadura) — apenas orienta.</li></ul></div>
+
+  <h3>🧹 Zelador — Gilson (atualmente)</h3>
+  <div class="faz"><b>O que faz</b><ul>
+    <li>Cuida da limpeza e conservação das áreas comuns e recolhe o lixo nos horários.</li>
+    <li>Orienta pequenas dúvidas de moradores e visitantes.</li>
+    <li>Informa ao síndico qualquer situação anormal.</li></ul></div>
+  <div class="naofaz"><b>O que NÃO faz</b><ul>
+    <li><b>Não recebe encomendas</b> (regra de 24/11/2026).</li>
+    <li>Não guarda chaves, não recebe prestadores ou materiais de unidades em obra e não entra em apartamentos sem autorização formal do proprietário.</li>
+    <li>Não faz limpeza em unidades nem serviços particulares.</li></ul></div>
+
+  <h3>🚪 Porteiro — Kleber (atualmente)</h3>
+  <div class="faz"><b>O que faz</b><ul>
+    <li><b>Recebe encomendas e correspondências</b> (seg–sex 8h–17h; sáb 8h–12h).</li>
+    <li>Agenda mudanças e entregas de grande porte junto com o síndico.</li>
+    <li>Apoia moradores e visitantes e comunica ocorrências ao síndico.</li></ul></div>
+  <div class="naofaz"><b>O que NÃO faz</b><ul>
+    <li>Não guarda chaves nem controles, não entra em unidades e não presta favores pessoais.</li></ul></div>
+
+  <h3>🛡️ Portaria virtual — Agaplan (24h)</h3>
+  <ul>
+    <li>Controle de acesso, cadastro de moradores, proprietários e visitantes e monitoramento de câmeras.</li>
+    <li>Confirma autorizações de visitantes e prestadores <b>diretamente com o morador</b>.</li>
+  </ul>
+
+  <h3>🏢 Administradora — PropStarter</h3>
+  <ul>
+    <li>Gestão financeira e administrativa (boletos, contas, cobranças, pagamentos).</li>
+    <li>Reclamações formais (barulho, infiltração, vazamento): e-mail com <b>nome completo, unidade, data, hora e fatos</b>, com fotos/vídeos quando houver, para <a href="mailto:patricia@propstarter.com.br">patricia@propstarter.com.br</a> e <a href="mailto:victor@propstarter.com.br">victor@propstarter.com.br</a>, <b>com cópia obrigatória</b> ao síndico (<a href="mailto:juliano@garbuggio.com.br">juliano@garbuggio.com.br</a>).</li>
+  </ul>
+  <div class="box blue"><p><b>Regra de ouro:</b> pedidos que não sejam da competência dos funcionários devem ser feitos ao síndico, que analisa caso a caso. Atividades entre funcionários e moradores <b>não autorizadas pelo síndico</b> são de responsabilidade das partes envolvidas.</p></div>
+</section>
+
+<!-- HISTÓRIA -->
+<section class="sec" id="historia">
+  <span class="tag">Nossa casa</span>
+  <h2>Um pouco da história do Itápolis</h2>
+  <p>O Edifício Itápolis, na Rua Pamplona, no Jardim Paulista, é um prédio residencial dos anos 1960 — hoje com mais de seis décadas, tempo em que o bairro virou um dos endereços mais procurados de São Paulo.</p>
+  <div class="tl">
+    <p><b>1964 —</b> o condomínio nasce com o seu primeiro <i>Regulamento de Condomínio</i>, lavrado em 26 de agosto de 1964 no 3º Tabelião de Notas da Capital (Livro 710, fls. 27 e seguintes). Foi, por décadas, o único documento a reger a vida do prédio.</p>
+    <p><b>2002 —</b> o novo Código Civil muda as regras do condomínio edilício, e o regulamento de 1964 passa a precisar de atualização.</p>
+    <p><b>2024–2025 —</b> a gestão moderniza o edifício: portaria virtual 24h, cadastro digital, obras para o AVCB, piso da garagem, calçada, espelho panorâmico na saída da garagem e treinamento de brigada de incêndio.</p>
+    <p><b>2025 —</b> a Assembleia aprova o <b>novo Regimento Interno</b>, registrado em ata, com regras claras de silêncio, obras, lixo, animais, câmeras, LGPD e penalidades.</p>
+    <p><b>2026 —</b> instalação da Torre de Segurança Colaborativa e manutenção das colunas hidráulicas, uma intervenção que o prédio nunca havia recebido.</p>
+  </div>
+  <p class="small">A história de um prédio é escrita por quem mora nele. Se você tem fotos, relatos ou documentos antigos do Itápolis, envie pelo formulário — queremos guardar essa memória.</p>
+</section>
+
+<!-- REGIMENTO -->
+<section class="sec" id="regimento">
+  <span class="tag green">Consulta</span>
+  <h2>Regimento Interno</h2>
+  <p>Leia o documento completo, registrado em ata de assembleia. Em dúvida sobre se algo é permitido, consulte o síndico <b>antes</b> de agir.</p>
+  <div class="actions" style="justify-content:flex-start">
+    <a class="btn g" href="Regimento_Interno_Edificio_Itapolis.pdf" target="_blank" rel="noopener">📘 Abrir o Regimento (PDF)</a>
+  </div>
+  <details><summary>Índice resumido</summary><div class="in"><ul>
+    <li>Cap. I–III — Disposições gerais, direitos, deveres e proibições</li>
+    <li>Cap. IV–V — Animais domésticos e manejo do lixo</li>
+    <li>Cap. VI — Destinação das unidades (uso residencial)</li>
+    <li>Cap. VIII–IX — Acesso e estacionamento</li>
+    <li>Cap. X–XI — Câmeras, visitantes e prestadores</li>
+    <li>Cap. XII — Funcionários</li>
+    <li>Cap. XIII — Reformas e manutenções</li>
+    <li>Cap. XIV–XVIII — Sustentabilidade, áreas comuns, assembleias, seguro e LGPD</li>
+    <li>Cap. XIX–XX — Penalidades e disposições finais</li></ul></div></details>
+</section>
+
+<!-- CONTATO -->
+<section class="sec final" id="contato">
+  <span class="tag" style="background:rgba(255,255,255,.18)">Fale com o síndico</span>
+  <h2>Dúvidas, sugestões e elogios</h2>
+  <p style="opacity:.95">Sua opinião ajuda a melhorar o prédio. Escolha o canal certo para cada assunto:</p>
+  <div class="actions" style="justify-content:flex-start">
+    <a class="btn w" href="https://julianogarbuggio.github.io/formulario-itapolis/" target="_blank" rel="noopener">📝 Enviar pelo formulário</a>
+    <a class="btn wa" href="https://wa.me/5511956759223?text=Ol%C3%A1%2C%20s%C3%ADndico.%20Tenho%20uma%20d%C3%BAvida%2Fsugest%C3%A3o%20sobre%20o%20Ed.%20It%C3%A1polis%3A%20" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a class="btn ghost" href="mailto:juliano@garbuggio.com.br?subject=Ed.%20It%C3%A1polis%20%E2%80%94%20D%C3%BAvida%2FSugest%C3%A3o&body=Nome%20completo%3A%0AUnidade%3A%0A%0AMensagem%3A%0A">✉️ E-mail</a>
+  </div>
+  <h3>Canais e horários</h3>
+  <a class="contact" href="mailto:juliano@garbuggio.com.br"><div class="ic">✉️</div><div><div class="lbl">E-mail — canal oficial (não urgente)</div><div class="val small">juliano@garbuggio.com.br</div><div class="sub">Resposta em até 48 horas úteis</div></div></a>
+  <a class="contact" href="https://wa.me/5511956759223" target="_blank" rel="noopener"><div class="ic">💬</div><div><div class="lbl">WhatsApp profissional do síndico</div><div class="val">(11) 95675-9223</div><div class="sub">Emergências reais e envio do formulário</div></div></a>
+  <p class="small"><b>Atendimento:</b> segunda a sexta, 8h às 18h; sábados, 8h às 12h. Fora desses horários, apenas emergências. Mensagens não urgentes devem ser enviadas por e-mail.</p>
+  <div class="qrbox" style="background:rgba(255,255,255,.1)">
+    <img src="img/qr_form.png" alt="QR Code do formulário de atendimento">
+    <p><b>Formulário de Atendimento</b><br>Aponte a câmera para abrir o cadastro e enviar suas mensagens.</p>
+  </div>
+</section>
+
+<div class="sticky"><a href="#emergencia">🚨 Emergências</a><a href="#cadastro">📋 Cadastro</a><a href="https://wa.me/5511956759223" target="_blank" rel="noopener">💬 Síndico</a></div>
+<footer>Condomínio Edifício Itápolis · Rua Pamplona, 1461 — Jardim Paulista — São Paulo/SP<br>Síndico: Juliano Garbuggio · Atualizado em novembro de 2026<br>Este guia resume o Regimento Interno; em caso de divergência, vale o texto do Regimento e as deliberações da Assembleia.</footer>
+</div>
+</body>
+</html>
